@@ -9,14 +9,12 @@ export async function getInput(form) {
   }
 }
 
-// submit file to server (simulated with a fake fetch)
+
 export async function submitFile(event) {
   event.preventDefault(); // stop page reload
   try {
     const form = event.target;
     const formData = new FormData(form);
-
-    // dummy POST request (you can replace with real API)
     const response = await fetch('https://, {
       method: 'POST',
       body: formData
